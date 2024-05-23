@@ -25,6 +25,12 @@ function App() {
       });
   };
 
+  const handleKeyPress = (e) => {
+    if(e.key==='Enter'){
+      handleButtonClick();
+    }
+  }
+
   return (
     <>
       <h1 className="text-center text-2xl font-bold mt-8 text-cyan-400 font-poppins md:text-3xl">
@@ -38,8 +44,9 @@ function App() {
         <input
           value={input}
           onChange={handleInputChange}
+          onKeyDown={handleKeyPress}
           className="m-auto py-2 px-14 border border-gray-300 rounded mt-12 text-center md:py-4 md:px-28 md:text-xl"
-          placeholder="Enter Your Favorite Color Here "
+          placeholder="Enter Your Favorite Color"
         />
       </div>
       <div className="flex justify-center items-center mt-4">
