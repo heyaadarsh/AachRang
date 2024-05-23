@@ -52,7 +52,7 @@ function App() {
       <div className="flex justify-center items-center mt-4">
         <button
           onClick={handleButtonClick}
-          className="py-2 px-5 bg-cyan-600 text-white rounded font-semibold md:px-44 md:py-4 md:font-semibold md:text-xl"
+          className="py-2 px-24 bg-cyan-600 text-white rounded font-semibold md:px-44 md:py-4 md:font-semibold md:text-xl"
         >
           Get Insights
         </button>
