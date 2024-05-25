@@ -33,6 +33,7 @@ function App() {
 
   return (
     <>
+      <div className=" md:w-3/5 m-auto">
       <h1 className="text-center text-2xl font-bold mt-8 text-cyan-400 font-poppins md:text-3xl">
         AachRang
       </h1>
@@ -58,14 +59,14 @@ function App() {
         </button>
       </div>
       <div className="mt-14 p-6 font-poppins">
-        <h1 className=" font-bold text-lg text-blue-300 md:text-3xl">
+        <h1 className=" font-bold text-lg text-blue-300 md:text-3xl md:text-center">
           Your Personality Insights:
         </h1>
-        {insights ? (<p className="text-white text-lg font-poppins md:text-2xl md:mt-5">
+        {insights ? (<p className="text-white text-lg font-poppins md:text-2xl md:mt-5 md:text-center">
           {insights.character_info}
-        </p>): (<p className="text-white text-lg font-poppins md:text-2xl md:mt-5">Enter a color to get insights.</p>)}
+        </p>): (<p className="text-white text-lg font-poppins md:text-2xl md:mt-5 md:text-center">Enter a color to get insights.</p>)}
         
-        {error && <p className="text-red-500 md:text-2xl">{error}</p>}
+        {error && <p className="text-red-500 md:text-2xl md:text-center">{error}</p>}
         
       </div>
 
@@ -75,6 +76,7 @@ function App() {
           colorSays API
         </a>
       </h2>
+      </div>
     </>
   );
 }
